@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/units_array" />
+
+    <EditText
+        android:id="@+id/edit_text_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_from"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="numberDecimal"
+        android:hint="Enter value" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_value"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/units_array" />
+
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_convert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+</RelativeLayout>
